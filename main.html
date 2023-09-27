@@ -1,16 +1,93 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Form</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-FNPgo7vE0K75pe7bBd8zr5n5PeEVgZ8eZE+2DH+5Ck5po8F5E/GOa3f5gF5Fj4z7r" crossorigin="anonymous">
+    <!-- Add Custom CSS -->
+    <style>
+        .form-group.has-error .form-control-feedback {
+            color: #a94442;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container mt-5">
+        <h2 class="mb-4">Internship Form</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="first-name-input">First Name</label>
+                    <input type="text" class="form-control" id="first-name-input" placeholder="First Name" required>
+                    <div class="invalid-feedback">
+                        Please provide your first name.
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="last-name-input">Last Name</label>
+                    <input type="text" class="form-control" id="last-name-input" placeholder="Last Name" required>
+                    <div class="invalid-feedback">
+                        Please provide your last name.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email-input">Email Address</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Email" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid email address.
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="college-input">College</label>
+                    <input type="text" class="form-control" id="college-input" placeholder="College Name" required>
+                    <div class="invalid-feedback">
+                        Please provide your college name.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="roll-no-input">Roll No</label>
+                    <input type="text" class="form-control" id="roll-no-input" placeholder="Roll No" required>
+                    <div class="invalid-feedback">
+                        Please provide your roll number.
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="graduation-year-select">Graduation Year</label>
+                    <select class="form-control" id="graduation-year-select" required>
+                        <option value="" selected disabled>Select Graduation Year</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select your graduation year.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="conditions-checkbox" required>
+                    <label class="form-check-label" for="conditions-checkbox">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit form</button>
+        </form>
+    </div>
 
+    <!-- Add Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+DWG/bs5KBz5Ll5z5Bx5Bx5B3u5C5B3u5C5B3u5C5B3u5C5B3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-n7w5lTqj4QU3e/koKy8QCz3FpEX5B9Ig3z5B3u5C5B3u5C5B3u5C5B3u5C5B3u5C5B3" crossorigin="anonymous"></script>
 </body>
-
 </html>
